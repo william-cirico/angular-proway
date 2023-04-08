@@ -1,0 +1,31 @@
+.container {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #949494;
+    max-width: 50%;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.icon {
+    margin-right: 10px;
+    background-color: #efefef;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-row {
+    display: flex;
+    margin: 10px auto;
+    width: 95%;
+    border-bottom: 1px solid #949494;
+    align-items: center;
+}  
+
+.content {
+    padding: 16px;
+    text-align: center;
+}

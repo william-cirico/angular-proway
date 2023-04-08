@@ -1,0 +1,10 @@
+<form (submit)="calcularIdade()">
+    <p>
+        <label>
+            Data de nascimento:
+            <input name="dataNascimento" [(ngModel)]="dataNascimento" type="date" />
+        </label>
+    </p>
+    <button type="submit">Calcular idade</button>
+    <p appHighlight *ngIf="idade">Sua idade é {{idade}}</p>
+</form>

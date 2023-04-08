@@ -1,0 +1,25 @@
+<ul class="menu">
+    <li [ngClass]="menuSelecionado === 'conteudo' ? 'menu-selecionado' : ''" (click)="menuSelecionado = 'conteudo'">Conteúdo</li>
+    <li [ngClass]="menuSelecionado === 'exercicios' ? 'menu-selecionado' : ''" (click)="menuSelecionado = 'exercicios'">Exercícios</li>
+</ul>
+<div *ngIf="menuSelecionado === 'conteudo'; else atividades">
+    <app-card titulo="Primeiro componente">
+        <app-primeiro-componente></app-primeiro-componente>
+    </app-card>
+    <app-card titulo="Data binding">
+        <app-segundo-componente></app-segundo-componente>
+        <app-terceiro-componente></app-terceiro-componente>
+    </app-card>
+    <app-card titulo="Diretivas">
+        <app-quarto-componente></app-quarto-componente>
+    </app-card>
+    <app-card titulo="Comunicação entre componentes">
+        <app-quinto-componente sobrenome="Círico"
+            [membros]="['William', 'Valdete', 'Almir', 'Alexandre', 'Alison']"></app-quinto-componente>
+    </app-card>
+    <app-card titulo="Serviços">
+        <app-sexto-componente></app-sexto-componente>
+    </app-card>
+</div>
+
+<ng-template #atividades></ng-template>

@@ -1,0 +1,5 @@
+<p>Familia <strong>{{sobrenome}}</strong></p>
+<ul>
+    <app-membro-familia (childEvent)="membroSelecionado=$event" *ngFor="let name of membros" [name]="name"></app-membro-familia>
+</ul>
+<p *ngIf="membroSelecionado">Membro da família selecionado: {{membroSelecionado}}</p>
